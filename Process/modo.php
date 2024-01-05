@@ -55,7 +55,7 @@ include_once "../header.php";
 
 
             <label for="Pseudo1" class="d-flex align-items-center flex-column mb-3 ">Entrer un fichier image</label>
-            <input type="file" class="form-control" id="image" name="image">
+            <input type="file" class="form-control" id="picture" name="picture">
          
 
 
