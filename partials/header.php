@@ -17,7 +17,7 @@
 <body>
    <header>
    
-   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+   <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     
   
@@ -27,8 +27,8 @@
     
     <!-- Boutons à droite -->
     <div class="ms-auto">
-    <a href="./index.php"> <button class="btn btn-primary me-2">Acceuil</button></a>
-   
+    <a href="../Process/modo.php"> <button class="btn btn-success me-2">Ajouter un son</button></a>
+    <a href="../Formulaire/Inscription.php">  <button class="btn btn-success">Connexion</button></a>
     </div>
   </div>
 </nav>

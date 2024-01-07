@@ -1,7 +1,6 @@
 <?php
 session_start();
-include_once "../header.php";
-
+include_once "../partials/header-retour-acceuil.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +14,6 @@ include_once "../header.php";
 
 <body>
     <style>
-        body {
-            background-color: #000;
-        }
-
         .custom-container {
             height: 50vh;
             display: flex;
@@ -34,15 +29,13 @@ include_once "../header.php";
             /* Réduire la largeur */
         }
     </style>
-    <br>
-    <br>
-    <br>
-   
-    <div id="formtxt" class="custom-message text-white text-center">
-        <p>Remplissez le champs ci-dessous pour vous inscrire :</p>
-    </div> 
-    <div class="container-fluid custom-container">
+
+
+<div class="container-fluid custom-container">
     <div class="custom-form">
+        <div id="formtxt" class="custom-message  text-center">
+            <p>Remplissez le champs ci-dessous pour vous inscrire :</p>
+        </div> 
         <form action="./traitementson.php" method="post" enctype='multipart/form-data'>
             <label for="Pseudo1" class="d-flex align-items-center flex-column mb-3 ">Entrer un titre de musique</label>
             <input type="text" class="form-control" id="title" name="title">
@@ -63,9 +56,9 @@ include_once "../header.php";
             <input type="file" class="form-control" id="audio" name="audio">
 
 
-            <button class="btn btn-info" type="submit">Ajouter</button>
+            <button class="btn btn-success" type="submit">Ajouter</button>
 
-
+            
         </form>
     </div>
 </div>

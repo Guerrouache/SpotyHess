@@ -1,5 +1,5 @@
 <?php
-require_once "./Process/connect_db.php";
+require_once "../Process/connect_db.php";
 session_start();
 include_once "./header.php";
 
@@ -18,14 +18,9 @@ include_once "./header.php";
 <body>
 
 
-    <div class="bg-dark p-4">
+    <div>
         <div class="container">
             <div class="row">
-                <div>
-                    <br>
-                    <p class="text-white text-center">Vous n'avez pas de compte? <a href="./Formulaire/Inscription.php">Je n'ai pas SpotyHess</a></p>
-                    <br>
-                </div>
                 <div class="col-md-3">
                     <img src="https://i.scdn.co/image/ab67616d0000b27357c87959e63d634cd5128e36" alt="PNL" class="img-fluid" id="image1">
                 </div>
@@ -39,19 +34,19 @@ include_once "./header.php";
                     <img src="https://i.scdn.co/image/ab67616d0000b27397340a7fb13c8f6fa15c1356" alt="DTF" class="img-fluid" id="image4">
                     
                 </div>
-                <div class="col">
-                    <button onclick="changerImages()">Changer Image</button>
+                <div class="d-flex justify-content-center p-5">
+                    <button class="btn btn-success" onclick="changerImages()">Changer Image</button>
+                </div>
+                <div>
+                    <p class="text-center">Vous n'avez pas de compte? <a href="./Formulaire/Inscription.php">Je n'ai pas SpotyHess</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <?php include_once "./footer.php"; ?>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <script src="./JS/Image.js"></script>
+   <script src="../JS/Image.js"></script>
 </body>
 
 
