@@ -1,40 +1,48 @@
 <?php
 require_once "../Process/connect_db.php";
 session_start();
-include_once "./header2.php";
+include_once "./header-retour-acceuil.php";
+
+
+
+
+$request=$database->query('SELECT * FROM musique WHERE id');
+$sons=$request->fetchALL();
+
+
+
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=p">
-    <title>play</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=p">
+  <title>play</title>
 </head>
+
 <body>
 
-<h1>Image Sélectionnée</h1>
-  <div id="image-container">
-    <img id="selected-image" src="" alt="Image sélectionnée">
+
+  <div class="container">
+    <table class="">
+      <tbody>
+        <?php
+        foreach ($sons as $son) { ?>
+          <tr>
+            <th> <?php echo $son["title"]  ?></th>
+            <th> <img src="<?php echo $son['picture']?>" ></th>
+            <th> <audio controls> <source src="<?php echo $son["audio"]?>"type="audio/mp3">  </audio></th>
+            <th> <?php echo $son["chanteur"]  ?></th>
+          </tr>
+          <?php } ?>
+        </tbody>
+    </table>
+
+
   </div>
 
-    
-
-
-
-  <script>
-    // Fonction pour récupérer le paramètre d'URL contenant le lien de l'image sélectionnée
-    function getImageParam() {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get('image');
-    }
-
-    // Récupérer le lien de l'image sélectionnée depuis l'URL
-    const selectedImageSrc = getImageParam();
-
-    // Insérer l'image sélectionnée dans la balise img
-    const selectedImageElement = document.getElementById('selected-image');
-    selectedImageElement.src = selectedImageSrc;
-   </script>
 </body>
+
 </html>

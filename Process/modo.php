@@ -36,7 +36,7 @@ include_once "../partials/header-retour-acceuil.php";
         <div id="formtxt" class="custom-message  text-center">
             <p>Remplissez le champs ci-dessous pour vous inscrire :</p>
         </div> 
-        <form action="./traitementson.php" method="post" enctype='multipart/form-data'>
+        <form action="../Process/traitementson.php" method="post" enctype='multipart/form-data'>
             <label for="Pseudo1" class="d-flex align-items-center flex-column mb-3 ">Entrer un titre de musique</label>
             <input type="text" class="form-control" id="title" name="title">
             
