@@ -1,5 +1,5 @@
 <?php
-require_once "./Process/connect_db.php";
+require_once "../Process/connect_db.php";
 session_start();
 include_once "./header2.php";
 

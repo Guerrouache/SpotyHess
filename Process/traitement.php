@@ -23,7 +23,7 @@ if (
       }
          $_SESSION['username']= $username;
 
-      header("Location: ../../page3.php");      
+      header("Location: ../../partials/bibliotheque.php");      
     }
     
 

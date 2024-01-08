@@ -1,7 +1,7 @@
 <?php
 require_once "../Process/connect_db.php";
 session_start();
-include_once "../partials/header-retour-acceuil.php";
+include_once "./header-retour-acceuil.php";
 
 ?>
 <!DOCTYPE html>

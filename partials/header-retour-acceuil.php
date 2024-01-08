@@ -8,7 +8,7 @@
    <title>Document</title>
    <style>
     .logo {
-      height: 100px; /* Ajustez la hauteur du logo selon vos besoins */
+      height: 100px; 
     }
   </style>
 </head>
@@ -24,7 +24,7 @@
       <img src=" https://static.vecteezy.com/system/resources/previews/018/930/750/non_2x/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Logo" class="logo">
     </a>
     
-    <!-- Boutons à droite -->
+   
     <div class="ms-auto">
       <a href="../partials/index.php"> <button class="btn btn-success me-2">Acceuil</button></a>
     
