@@ -13,17 +13,21 @@ if (
 
 
       if ($pseudoexist) {
+        $iduser = $pseudoexist['id'];
         
       } else {
        $request = $database->prepare("INSERT INTO user (username) VALUES (:username)");
        $resultat = $request->execute([
-           'username' => $_POST['username'],
+           'username' => $_POST['username'],   
         ]);
+        $iduser = $database->lastInsertId();
 
       }
          $_SESSION['username']= $username;
+         $_SESSION['id_user']=$iduser;
+         
 
-      header("Location: ../../page3.php");      
+      header("Location: ../../partials/bibliotheque.php");      
     }
     
 

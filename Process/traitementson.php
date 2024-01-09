@@ -25,7 +25,7 @@ if (
 
         $audioName = $_FILES['audio']['name'];
         move_uploaded_file($_FILES['audio']['tmp_name'], '../son/'. $audioName);
-        $pathAudio = './son/'. $audioName ;
+        $pathAudio = '../son/'. $audioName ;
         
 
 

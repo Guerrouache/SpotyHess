@@ -1,7 +1,10 @@
 <?php
 require_once "../Process/connect_db.php";
 session_start();
-include_once "../partials/header-retour-acceuil.php";
+include_once "./header-retour-acceuil.php";
+
+$request = $database->query('SELECT * FROM musique');
+$sons = $request->fetchALL();
 
 $request=$database->query('SELECT * FROM musique');
 $sons=$request->fetchAll();
@@ -13,11 +16,13 @@ if (isset ($_GET['pseudo'])&& !empty($_GET['pseudo'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3</title>
 </head>
+
 <body>
 
 
@@ -42,4 +47,5 @@ if (isset ($_GET['pseudo'])&& !empty($_GET['pseudo'])) {
 
   </div>
 </body>
+
 </html>
