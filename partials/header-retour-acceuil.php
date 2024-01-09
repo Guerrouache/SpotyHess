@@ -27,6 +27,7 @@
    
     <div class="ms-auto">
       <a href="../partials/index.php"> <button class="btn btn-success me-2">Acceuil</button></a>
+      <a href="./playlist.php"> <button class="btn btn-success me-2">  <p>Playlist</p></button></a>
     
     </div>
   </div>
