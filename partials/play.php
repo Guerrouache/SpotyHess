@@ -1,40 +1,40 @@
 <?php
-require_once "./Process/connect_db.php";
+require_once "../Process/connect_db.php";
 session_start();
-include_once "./header2.php";
+include_once "../partials/header-retour-acceuil.php";
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=p">
-    <title>play</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=p">
+  <title>play</title>
 </head>
+
 <body>
 
-<h1>Image Sélectionnée</h1>
-  <div id="image-container">
-    <img id="selected-image" src="" alt="Image sélectionnée">
+  <?php
+
+  if (isset($_GET['id']) && !empty($_GET['id'])) {
+
+    $musicId = $_GET['id'];
+    $request = $database->query("SELECT * FROM musique WHERE id =$musicId");
+    $muzik = $request->fetch();
+  }
+  ?>
+<div class="d-flex justify-content-center">
+  <div class="" style="width: 25rem;">
+    <img src="<?php echo $muzik['picture'] ?>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $muzik["chanteur"] ?></h5>
+      <p class="card-text"><?php echo $muzik["title"] ?></p>
+      <audio controls src="<?php echo $muzik["audio"] ?>"></audio>
+    </div>
   </div>
+</div>
 
-    
-
-
-
-  <script>
-    // Fonction pour récupérer le paramètre d'URL contenant le lien de l'image sélectionnée
-    function getImageParam() {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get('image');
-    }
-
-    // Récupérer le lien de l'image sélectionnée depuis l'URL
-    const selectedImageSrc = getImageParam();
-
-    // Insérer l'image sélectionnée dans la balise img
-    const selectedImageElement = document.getElementById('selected-image');
-    selectedImageElement.src = selectedImageSrc;
-   </script>
 </body>
+
 </html>
