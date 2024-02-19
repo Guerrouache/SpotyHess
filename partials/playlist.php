@@ -19,7 +19,7 @@ if (isset ($_GET['id'])&& !empty($_GET['id'])) {
 ?>
 
 
-<body>
+<body class="bg-dark">
 
 <form action=""method="get">
 

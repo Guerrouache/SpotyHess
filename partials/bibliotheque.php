@@ -23,7 +23,7 @@ if (isset ($_GET['pseudo'])&& !empty($_GET['pseudo'])) {
     <title>Page 3</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
 
 

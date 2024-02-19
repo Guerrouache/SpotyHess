@@ -13,7 +13,7 @@
   </style>
 </head>
 
-<body>
+<body class="bg-dark">
    <header>
    
    <nav class="navbar navbar-expand-lg navbar-light">
@@ -26,8 +26,8 @@
     
    
     <div class="ms-auto">
-      <a href="../partials/index.php"> <button class="btn btn-success me-2">Acceuil</button></a>
-      <a href="./playlist.php"> <button class="btn btn-success me-2">  <p>Playlist</p></button></a>
+      <a href="../index.php"> <button class="btn btn-success me-2">Acceuil</button></a>
+     
     
     </div>
   </div>

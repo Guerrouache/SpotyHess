@@ -13,7 +13,7 @@ include_once "../partials/header-retour-acceuil.php";
   <title>play</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
   <?php
 

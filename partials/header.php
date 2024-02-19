@@ -27,9 +27,9 @@
     
     <!-- Boutons à droite -->
     <div class="ms-auto">
-    <a href="../Process/modo.php"> <button class="btn btn-success me-2">Ajouter un son</button></a>
-    <a href="../Formulaire/Inscription.php">  <button class="btn btn-success me-2">Connexion</button></a>
-    <a href="../partials/bibliotheque.php">  <button class="btn btn-success me-2">Bibliotheque</button></a>
+    <a href="./Process/modo.php"> <button class="btn btn-success me-2">Ajouter un son</button></a>
+    <a href="./Formulaire/Inscription.php">  <button class="btn btn-success me-2">Connexion</button></a>
+    <a href="./partials/bibliotheque.php">  <button class="btn btn-success me-2">Bibliotheque</button></a>
     </div>
   </div>
 </nav>

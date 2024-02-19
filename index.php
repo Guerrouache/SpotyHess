@@ -1,7 +1,7 @@
 <?php
-require_once "../Process/connect_db.php";
+require_once "./Process/connect_db.php";
 session_start();
-include_once "./header.php";
+include_once "./partials/header.php ";
 
 ?>
 
@@ -15,7 +15,7 @@ include_once "./header.php";
     <title>SpotyHess</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
 
     <div>
@@ -35,7 +35,7 @@ include_once "./header.php";
                     
                 </div>
                 <div class="d-flex justify-content-center p-5">
-                    <button class="btn btn-success" onclick="changerImages()">Changer Image</button>
+                    <button class="btn btn-success" onclick="changerImages()">Changer Playlist</button>
                 </div>
                 <div>
                     <p class="text-center">Vous n'avez pas de compte? <a href="./Formulaire/Inscription.php">Je n'ai pas SpotyHess</a></p>
@@ -46,7 +46,7 @@ include_once "./header.php";
    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <script src="../JS/Image.js"></script>
+   <script src="./JS/Image.js"></script>
 </body>
 
 
